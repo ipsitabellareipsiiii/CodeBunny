@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Let's have a Virtual Date? 😘 </title>
+<style>
+body{text-align:center;font-family: Kunstler Script; margin-top:300px ; background-color:Black;}
+
+button{font-size:30px; padding:20px; cursor:pointer;}
+#nobutton{position:absolute}
+</style>
+</head>
+<body>
+<h1>Let's have a Virtual Date? 😘 </h1>
+<a href="/yes">
+<button>Yes</button>
+</a>
+<button id="noButton">No</button>
+<script>
+let button = doccument.getElementByID("noButton"); button.addEventlistener("mouseover",function(){  
+                                                                           
+    let x = Math.random() * window.innerWidth;
+    let y = Math.random() * window.innerHeight;
+
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+
+});
+
+</script>
+
+</body>
+</html>
