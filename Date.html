@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Let's have a Virtual Date? 😘 </title>
-<style>
-body{text-align:center;font-family: Aldhabi; margin-top:350px ; background-color:yellow;}
-
-button{font-size:20px; padding:15px; cursor:pointer;}
-#nobutton{position:absolute}
-</style>
+    <title>Let's have a Virtual Date? 😘</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Aldhabi;
+            margin-top: 350px;
+            background-color: yellow;
+        }
+        button {
+            font-size: 20px;
+            padding: 15px;
+            cursor: pointer;
+        }
+        #noButton {
+            position: absolute;
+        }
+    </style>
 </head>
 <body>
-<h1>Let's have a Virtual Date? 😘 </h1>
-    <a href="/yes">
-<button>Yes</button>
-</a>
-<button id="noButton">No</button>
-<button onclick="alert('Yayyy 😘 Date confirmed!')">Yes</button>
-    <button onclick="alert('Yayyy 😘 Virtual date accepted!')">Yes</button>
-<button id="noButton">No</button>
-<script>
-let button = document.getElementById("noButton");
-
-button.addEventListener("mouseover", function () {
-
-    let x = Math.random() * (window.innerWidth - button.offsetWidth);
-    let y = Math.random() * (window.innerHeight - button.offsetHeight);
-
-    button.style.left = x + "px";
-    button.style.top = y + "px";
-});
-</script>
-
+    <h1>Let's have a Virtual Date? 😘</h1>
+    
+    <button onclick="alert('Yayyy 😘 Date confirmed!')">Yes</button>
+    <button id="noButton">No</button>
+    <script>
+        let button = document.getElementById("noButton");
+        button.addEventListener("mouseover", function () {
+            let x = Math.random() * (window.innerWidth - button.offsetWidth);
+            let y = Math.random() * (window.innerHeight - button.offsetHeight);
+            button.style.left = x + "px";
+            button.style.top = y + "px";
+        });
+    </script>
 </body>
 </html>
